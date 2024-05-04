@@ -1,3 +1,3 @@
-module example.com/go-htmx
+module example.com/monkey
 
 go 1.21.7
