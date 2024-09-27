@@ -21,6 +21,9 @@
       pkgs = nixpkgsFor.${system};
     in {
       default = pkgs.mkShell {
+        # or set CGO_ENABLED = 0; env var
+        hardeningDisable = ["all"];
+
         buildInputs = with pkgs; [
           go
           golangci-lint
